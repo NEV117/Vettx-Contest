@@ -1,0 +1,17 @@
+{
+  "name": "Vettx's Facebook Marketplace",
+  "version": "0.01",
+  "description": "Chrome extension that syncs Facebook Marketplace conversations to Vettx.",
+  "background": 
+  {"page":"background.html"
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon":"Vettx_default.png"
+  },
+  "manifest_version":2,
+  "permissions": [
+    "tabs",
+    "http://*.facebook.com/*"
+  ]
+}
