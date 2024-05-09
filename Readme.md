@@ -10,7 +10,7 @@ Presented by:
 ## Technologies
 - Typescript 
 - React
-- Vite
+- Webpack
 - Facebook SDK
 - Vanilla CSS
 
@@ -31,4 +31,3 @@ Presented by:
 - Quality and clarity of code.
 - Adherence to design specifications.
 - Innovation and creativity in solving the challenge.
-
