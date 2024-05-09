@@ -8,9 +8,11 @@ Presented by:
 - Juan Diego Cuevas Mena
 
 ## Technologies
-- Facebook SDK
-- Vanilla css
 - Typescript 
+- React
+- Vite
+- Facebook SDK
+- Vanilla CSS
 
 ## Requirements:
 - Develop a Chrome extension that reads and syncs open Facebook Marketplace conversations from the last 7 days.

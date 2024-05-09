@@ -4,15 +4,15 @@
   "version": "1.0",
   "description": "Chrome extension that syncs Facebook marketplace conversations to Vettx.",
   "icons": {
-    "16": "assets/icon/not-enabled/icon-16.png",
-    "48": "assets/icon/not-enabled/icon-48.png",
-    "128": "assets/icon/not-enabled/icon-128.png"
+    "16": "icon/not-enabled/icon-16.png",
+    "48": "icon/not-enabled/icon-48.png",
+    "128": "icon/not-enabled/icon-128.png"
   },
   "author": ["nicolas.escandon@uao.edu.co", "juan_diego.cuevas@uao.edu.co"],
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "index.html",
     "default_title": "Vettx Extension"
   },
-  "permissions": ["tabs"],
-  "host_permissions": ["http://*.facebook.com/*"]
+  "permissions": ["tabs", "scripting"],
+  "host_permissions": ["http://*/*", "https://*/*"]
 }

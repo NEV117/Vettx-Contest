@@ -1,25 +1,18 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebook Connect For Chrome Extension</title>
-    <script type="text/javascript" src="popup.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body class="main-container" style="height: 300px;">
-    <section  id="main">
+    <section id="main">
       <div class="top-card" id="top-card">
-        <img src="/assets/logo/logo.png" alt="vettx's Logo" />
-        <div class="user-container">
-          <h2>Hello James!</h2>
-          <input type="radio" />
-          Enable message syncing
-        </div>
-
-        <div class="buttons-container" id="buttons-container">
-          <button onclick="">Open Facebook Marketplace</button>
-          <button onclick="">Open Vettx Marketplace</button>
-        </div>
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
       </div>
     </section>
+
     <footer class="footer-card" id="footer-card">
       <p class="disclaimer-text">
         To seamlessly track and follow up on messages using the Vettx
