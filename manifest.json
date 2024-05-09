@@ -1,17 +1,18 @@
 {
+  "manifest_version": 3,
   "name": "Vettx's Facebook Marketplace",
-  "version": "0.01",
-  "description": "Chrome extension that syncs Facebook Marketplace conversations to Vettx.",
-  "background": 
-  {"page":"background.html"
+  "version": "1.0",
+  "description": "Chrome extension that syncs Facebook marketplace conversations to Vettx.",
+  "icons": {
+    "16": "assets/icon/not-enabled/icon-16.png",
+    "48": "assets/icon/not-enabled/icon-48.png",
+    "128": "assets/icon/not-enabled/icon-128.png"
   },
-  "browser_action": {
+  "author": ["nicolas.escandon@uao.edu.co", "juan_diego.cuevas@uao.edu.co"],
+  "action": {
     "default_popup": "popup.html",
-    "default_icon":"Vettx_default.png"
+    "default_title": "Vettx Extension"
   },
-  "manifest_version":2,
-  "permissions": [
-    "tabs",
-    "http://*.facebook.com/*"
-  ]
+  "permissions": ["tabs"],
+  "host_permissions": ["http://*.facebook.com/*"]
 }
