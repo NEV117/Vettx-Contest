@@ -9,7 +9,7 @@ function App() {
     chrome.scripting.executeScript({
       target: { tabId: tab.id! },
       func: () => {
-        alert("Sending to fb market...");
+        alert("sending to fb market.");
       }
     });
   }
@@ -19,8 +19,8 @@ function App() {
 
     chrome.scripting.executeScript({
       target: { tabId: tab.id! },
-      func: () => {
-        alert("Sending to vettx market...");
+      func: async () => {
+        await chrome.tabs.create({ url:"https://www.vettx.com/product/overview" });
       }
     });
   }
