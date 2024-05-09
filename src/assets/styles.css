@@ -4,17 +4,18 @@
   justify-content: center;
   align-items: center;
   width: 310px;
-  height: 358px;  
+  height: 358px;
 }
 
 .vettx-logo {
-   max-width: 152px;
-   padding-top: 8rem;
-   align-self: center;
+  max-width: 152px;
+  padding-top: 8rem;
+  align-self: center;
 }
 
 #main {
-  border: 2px #E3E3E3 solid;
+  background-color: #FFFFFF;
+  border: 2px #e3e3e3 solid;
   border-radius: 12px;
   margin: 0;
   padding: 0;
@@ -38,24 +39,6 @@
   color: #727272;
 }
 
-
-
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  border-radius: 12px;
-}
-
 a {
   font-weight: 500;
   color: #646cff;
@@ -69,9 +52,11 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 358px;
-  border-radius: 12px; 
+  max-width: 310px;
+  max-height: 385.96px;
+  justify-content: center;
+  background-color: #F5F8FA;
+  font-family: "DM Sans", sans-serif;
 }
 
 h1 {
@@ -91,7 +76,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #009BF5;
+  border-color: #009bf5;
 }
 button:focus,
 button:focus-visible {
@@ -137,7 +122,7 @@ button:focus-visible {
   bottom: 0;
   background-color: #bababa;
   border: 1px solid #adb5bd;
-  transition: .4s;
+  transition: 0.4s;
   border-radius: 30px;
 }
 
@@ -150,96 +135,95 @@ button:focus-visible {
   left: 0.27em;
   bottom: 0.25em;
   background-color: #ffffff;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2BBF7A;
-  border: 1px solid #2BBF7A;
+  background-color: #2bbf7a;
+  border: 1px solid #2bbf7a;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2BBF7A;
+  box-shadow: 0 0 1px #2bbf7a;
 }
 
 input:checked + .slider:before {
   transform: translateX(1.4em);
   background-color: #fff;
 }
- .checkbox-container{
+.checkbox-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
- }
- .checkbox-container > p {
+}
+.checkbox-container > p {
   padding-left: 13px;
   color: #bababa;
   font-size: 15px;
- }
+}
 
- .buttons-container{
+.buttons-container {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
   max-width: 270px;
- }
+}
 
- .buttons-wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 32px;
- }
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 32px;
+}
 
- .primary-button{ 
-  background-color: #009BF5;
+.primary-button {
+  background-color: #009bf5;
   padding-left: 8px;
   padding-right: 8px;
   color: white;
   width: 100%;
   height: 36px;
   font-size: 14px;
- }
+}
 
- .primary-button:hover{
-  background-color: #0076f5; 
- }  
+.primary-button:hover {
+  background-color: #0076f5;
+}
 
- .secundary-button{ 
+.secundary-button {
   background-color: #ffffff;
   padding-left: 8px;
   padding-right: 8px;
-  color: #009BF5;
-  border: 2px #009BF5 solid;
+  color: #009bf5;
+  border: 2px #009bf5 solid;
   width: 90%;
   height: 36px;
   font-size: 14px;
- }
+}
 
- .secundary-button:hover{ 
+.secundary-button:hover {
   border-color: #0076f5;
- }
- 
- .footer-card {
-    background-color: rgb(248, 242, 242);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 310px;
-    text-align: center;
-    border-bottom-left-radius: 12px; 
-    border-bottom-right-radius: 12px;
- }
+}
 
- .disclaimer-text {
-    text-align: center;
-    color: #bababa;
-    max-width: 278px;
-  }
+.footer-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 310px;
+  text-align: center;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
 
- .Copyright{
-    color: #919191
- }
+.disclaimer-text {
+  text-align: center;
+  color: #bababa;
+  max-width: 278px;
+}
+
+.Copyright {
+  color: #919191;
+}
