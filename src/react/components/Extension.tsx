@@ -1,4 +1,19 @@
-const App = () => {
+import { useState } from "react";
+
+const Extension = () => {
+  const [userName, setUserName] = useState("no-user");
+  const [syncState, setSyncState] = useState("Enable message syncing");
+
+  const handleCheckboxChange = (isChecked: boolean) => {
+    if (isChecked) {
+      setUserName("James"); 
+      setSyncState("Syncing messages");
+    } else {
+      setUserName("no-user"); 
+      setSyncState("Enable message syncing");
+    }
+  };
+
   function openTab(message: string) {
     chrome.runtime.sendMessage(message);
   }
@@ -6,13 +21,16 @@ const App = () => {
   return (
     <>
       <div className="user-container">
-        <h2>Hello James!</h2>
+        <h2>Hello {userName}!</h2>
         <div className="checkbox-container">
           <label className="switch">
-            <input type="checkbox" />
+            <input
+              type="checkbox"
+              onChange={(e) => handleCheckboxChange(e.target.checked)}
+            />
             <span className="slider"></span>
           </label>
-          <p>Enable message syncing</p>
+          <p>{syncState}</p>
         </div>
       </div>
 
@@ -33,4 +51,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Extension;
