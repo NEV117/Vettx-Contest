@@ -162,10 +162,7 @@ input:checked + .slider:before {
   color: #bababa;
   font-size: 15px;
 }
-
 .buttons-container {
-  text-align: center;
-  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
@@ -187,6 +184,26 @@ input:checked + .slider:before {
   width: 100%;
   height: 36px;
   font-size: 14px;
+  margin-bottom: 13px;
+}
+
+.error-button {
+  background-color: #F82032;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: white;
+  width: 100%;
+  height: 36px;
+  font-size: 14px;
+  margin-bottom: 13px;
+}
+
+.d-none {
+  display: none;
+}
+
+.error-message {
+  color: #F82032 !important;
 }
 
 .primary-button:hover {

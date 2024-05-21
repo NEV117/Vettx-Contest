@@ -1,11 +1,10 @@
 import Extension from "./components/Extension";
 function App() {
+  return (
+    <>
+      <Extension />
+    </>
+  );
+}
 
-    return (
-      <>
-        <Extension/>
-      </>
-    )
-  }
-  
-  export default App;
+export default App;
